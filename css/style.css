@@ -1,0 +1,327 @@
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v35-cyrillic_latin-regular.woff2")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v35-cyrillic_latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v35-cyrillic_latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/open-sans-v35-cyrillic_latin-800.woff2") format("woff2");
+}
+
+:root {
+  --primary-font: "Open Sans";
+  --text-color: #444444;
+  --white-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  color: var(--text-color);
+  line-height: 0.15rem;
+  font-weight: 400;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+img {
+  object-fit: cover;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 10rem;
+  margin: 0 auto;
+}
+
+.hero-container {
+  padding-bottom: 2.4rem;
+  padding-top: 2.4rem;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-info__start {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.hero-info__start__item {
+  font-family: "open sans";
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+.hero-info__start__item:hover {
+  color: #de2e54;
+}
+
+.heronav-list {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.heronav-link {
+  text-transform: uppercase;
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.2rem;
+}
+.heronav-link:hover {
+  color: #de2e54;
+}
+.hero-info__btn {
+  padding: 1.2rem 2.4rem;
+  border: 0.2rem solid #de2e54;
+  border-radius: 0.8rem;
+  background-color: #de2e54;
+  color: #fff;
+  transition: 0.4s;
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.hero-info__btn:hover {
+  background-color: #fff;
+  color: #de2e54;
+}
+
+.signup {
+  background-color: #0eb4c1;
+  height: 53rem;
+}
+
+.signup-form__title {
+  padding-bottom: 1.6rem;
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  color: var(--white-color);
+}
+
+.signup-form__text {
+  padding-bottom: 3.6rem;
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: var(--white-color);
+  opacity: 0.9;
+}
+
+.signup-form__btn {
+  padding: 1.2rem 2.4rem;
+  border: 0.2rem solid #de2e54;
+  border-radius: 0.8rem;
+  background-color: #de2e54;
+  color: #fff;
+  transition: 0.4s;
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.signup-form__btn:hover {
+  background-color: #fff;
+  color: #de2e54;
+}
+
+.signup-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signup-form__img {
+  margin-top: 2.7rem;
+}
+
+.services {
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.services-type__title {
+  padding-bottom: 5rem;
+}
+
+.hijoma {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding-bottom: 8rem;
+  gap: 6.4rem;
+}
+
+.hijoma-dv__title {
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  padding-bottom: 2.4rem;
+}
+
+.hijoma-dv__text {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.get-info {
+  background-color: #0eb4c1;
+  height: 25rem;
+}
+
+.get-info__container {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.get-info__title {
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  padding-bottom: 5rem;
+  color: var(--white-color);
+}
+
+.contact-us {
+  padding: 1.2rem 2.4rem;
+  border: 0.2rem solid #fff;
+  background-color: #0eb4c1;
+  color: #fff;
+  border-radius: 0.8rem;
+  transition: 0.4s;
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.contact-us:hover {
+  border: 0.2rem solid #de2e54;
+  background-color: #de2e54;
+  color: #fff;
+}
+
+.footer {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  height: 9.7rem;
+  background-color: #222222;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer-info__title {
+  color: var(--white-color);
+}
+
+.footer-info__title:hover {
+  color: #de2e54;
+}
+
+.footernav-list {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.footernav-list__link {
+  color: var(--white-color);
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.2rem;
+}
+
+.footernav-list__link:hover {
+  color: #de2e54;
+}
